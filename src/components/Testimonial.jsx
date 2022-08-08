@@ -37,21 +37,23 @@ const Testimonial = () => {
             slidesToShow: 2,
             slidesToScroll: 2,
             initialSlide: 2
+            
           }
         },
         {
           breakpoint: 480,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            arrows: false
           }
         }
       ],
-    prevArrow: <Arrow Icon={BsArrowLeftCircle} />,
-    nextArrow: <Arrow Icon={BsArrowRightCircle} />,
+    prevArrow: <Arrow Icon={BsArrowLeftCircle}  className="hidden md:flex"/>,
+    nextArrow: <Arrow Icon={BsArrowRightCircle}  className="hidden md:flex"/>,
   };
   return (
-    <section className="max-w-[1100px] mx-auto min-h-screen p-20">
+    <section className="max-w-[1100px] mx-auto min-h-min md:min-h-screen p-1 md:p-20">
       <div className="text-center text-4xl font-bold">
         <h1>
           What our customers <br /> say about Ileero Remit
@@ -60,7 +62,7 @@ const Testimonial = () => {
       <div className="">
         <Slider {...settings} className="px-2">
           <div className="h-[250px] ">
-            <div className="flex flex-col h-full px-[51px] py-12 items-start justify-around shadow-xl mx-2 shadow-[#1892F529] rounded-2xl mt-2">
+            <div className="flex flex-col h-full px-[20px] md:px-[51px] py-12 items-start justify-around shadow-xl md:mx-2 shadow-[#1892F529] rounded-2xl mt-2">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
                 quia distinctio, provident iste rerum ab delectus dolore.

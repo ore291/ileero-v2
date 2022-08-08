@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-white max-w-6xl mx-auto md:h-[400px] px-12 py-20">
-      <div className="grid grid-cols-1 md:grid-cols-4  footer">
+    <footer className="bg-white max-w-6xl mx-auto md:h-[400px] px-4 md:px-12 py-20">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-y-2 footer">
         <div className="">
           <div className="flex flex-col items-start justify-center space-y-3">
             <img
@@ -49,7 +49,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="w-full grid grid-cols-1 md:grid-cols-4 mt-5">
+      <div className="w-full grid grid-cols-1 md:grid-cols-4 gap-y-2 mt-5">
         <p className="text-[12px] text-[#205072]">
           © 2020 Ileero Remit. All Rights Reserved.
         </p>
@@ -57,10 +57,10 @@ const Footer = () => {
         <div className="hidden md:block" />
 
         <div className="flex items-center justify-start space-x-3  ">
-          <img src="/facebook.svg" alt="" srcset="" className="w-6 h-6" />
-          <img src="/twitter.svg" alt="" srcset="" className="w-6 h-6" />
-          <img src="/linkedin.svg" alt="" srcset="" className="w-6 h-6" />
-          <img src="/instagram.svg" alt="" srcset="" className="w-6 h-6" />
+          <img src="/facebook.svg" alt="" srcSet="" className="w-6 h-6" />
+          <img src="/twitter.svg" alt="" srcSet="" className="w-6 h-6" />
+          <img src="/linkedin.svg" alt="" srcSet="" className="w-6 h-6" />
+          <img src="/instagram.svg" alt="" srcSet="" className="w-6 h-6" />
         </div>
       </div>
     </footer>

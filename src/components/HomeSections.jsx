@@ -19,7 +19,7 @@ const HomeSections = () => {
             recusandae, pariatur facere ea accusantium nesciunt nam!.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-20 gap-10 gap-y-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 md:mt-20 gap-10 gap-y-5 md:gap-y-20">
           <WhyChooseCards />
           <WhyChooseCards />
           <WhyChooseCards />
@@ -28,7 +28,7 @@ const HomeSections = () => {
           <WhyChooseCards />
         </div>
       </section>
-      <section className=" p-10 py-20 bg-[#011A1D] min-h-screen ">
+      <section className="p-5 md:p-10 md:py-20 bg-[#011A1D] min-h-min md:min-h-screen ">
         <div className="max-w-3xl mx-auto">
           <div className="flex flex-col items-center justify-center text-white space-y-5">
             <div>
@@ -47,11 +47,11 @@ const HomeSections = () => {
             </div>
           </div>
           <div className="flex items-center justify-center mt-10 ">
-            <img src="/world.png" alt="" className="object-cover " srcset="" />
+            <img src="/world.png" alt="" className="object-cover " srcSet="" />
           </div>
         </div>
       </section>
-      <section className="bg-white p-10 py-20 min-h-screen">
+      <section className="bg-white p-5 md:p-10 md:py-20 min-h-screen">
         <div className="flex flex-col items-center justify-center text-black space-y-5">
           <div>
             <h1 className="text-3xl font-bold text-center">How it works</h1>
@@ -62,27 +62,27 @@ const HomeSections = () => {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4  max-w-6xl gap-2 mt-10 mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4  max-w-6xl gap-2 md:mt-5 mx-auto">
           <HowWorksCard color={"bg-[#00D1FC]"} />
           <HowWorksCard color={"bg-[#FB9D44]"} />
           <HowWorksCard color={"bg-[#FD4D54]"} />
           <HowWorksCard color={"bg-[#313FD6]"} />
         </div>
       </section>
-      <section className="bg-[#EFF7FF]  h-[450px]">
+      <section className="bg-[#EFF7FF] min-h-min md:h-[450px]">
         <div className="grid grid-cols-1 md:grid-cols-2">
-          <div className="relative">
+          <div className="md:relative">
             <img
               src="/Mask Group 66.png"
-              className="object-cover absolute -top-20"
+              className="object-cover md:absolute md:-top-20"
               alt=""
-              srcset=""
+              srcSet=""
             />
           </div>
-          <div className="flex items-center justify-start py-28 pl-5">
+          <div className="flex items-center justify-start py-14 md:py-28 p-2 md:pl-5">
             <div className="flex flex-col items-center justify-center text-black space-y-5">
               <div>
-                <h1 className="text-3xl font-bold text-start">
+                <h1 className="text-3xl font-bold text-center md:text-start">
                   Fastest way to send <br /> money online
                 </h1>
                 <p className="text-start text-sm font-normal mt-4">
@@ -97,11 +97,11 @@ const HomeSections = () => {
         </div>
       </section>
       <Testimonial />
-      <section className="faq p-10 py-20 min-h-screen ">
+      <section className="faq md:p-10 p-5 md:py-20 min-h-min md:min-h-screen ">
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col items-center justify-center text-black space-y-5">
             <div>
-              <h1 className="text-3xl font-bold text-center">FAQ</h1>
+              <h1 className="text-3xl font-bold text-center mt-2">FAQ</h1>
               <p className="text-center text-sm font-normal mt-2">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore <br /> et dolore magna
@@ -111,7 +111,7 @@ const HomeSections = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div className="flex">
-              <div className="w-full px-4 pt-16">
+              <div className="w-full px-1 md:px-4 pt-4 md:pt-16">
                 <div className="mx-auto w-full max-w-md rounded-2xl bg-white p-2">
                   <Disclosure as="div" className="mt-2">
                     {({ open }) => (
@@ -192,7 +192,7 @@ const HomeSections = () => {
               </div>
             </div>
             <div className="flex">
-              <div className="w-full px-4 pt-16">
+              <div className="w-full px-1 md:px-4 pt-4 md:pt-16">
                 <div className="mx-auto w-full max-w-md rounded-2xl bg-white p-2">
                   <Disclosure as="div" className="mt-2">
                     {({ open }) => (
@@ -283,9 +283,9 @@ const HomeSections = () => {
       <section className="px-10 pt-20 bg-[#EFF7FF]">
         <div className="grid grid-cols-1 md:grid-cols-2 max-w-5xl mx-auto">
           <div className="flex flex-col items-center justify-center">
-            <div className="flex flex-col items-start justify-center text-black space-y-10">
+            <div className="flex flex-col items-center md:items-start justify-center text-black space-y-10">
               <div>
-                <h1 className="text-3xl font-bold text-start">
+                <h1 className="text-3xl font-bold text-center md:text-start">
                   Lorem Ipsum Flows
                 </h1>
                 <p className="text-start text-sm font-normal mt-2">
@@ -324,14 +324,14 @@ const HomeSections = () => {
               </p>
             </div>
             <form className="flex items-center justify-center space-x-2">
-              <div className="w-[364px] h-[56px] px-2 bg-white rounded">
+              <div className="w-[250px] md:w-[364px] h-[56px] px-2 bg-white rounded">
                 <input
                   type="text"
                   placeholder="Email"
                   className="mx-1 w-full h-full rounded-md outline-none border-none focus:ring-0 focus:outline-none placeholder:pl-2 placeholder:text-sm  text-black "
                 />
               </div>
-              <button className="cursor-pointer h-[56px] w-[152px] hover:bg-transparent hover:text-white bg-[#205072] border border-[#205072] hover:border-white text-white rounded flex items-center justify-center text-lg font-semibold">
+              <button className="cursor-pointer h-[56px] w-[120px] md:w-[152px] hover:bg-transparent hover:text-white bg-[#205072] border border-[#205072] hover:border-white text-white rounded flex items-center justify-center text-lg font-semibold">
                 Subscribe
               </button>
             </form>

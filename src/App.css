@@ -1,4 +1,9 @@
 
+body, html {
+  font-family: 'Montserrat', sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
 
 .main-hero{
   width: 100%;
@@ -291,7 +296,7 @@ p {
 
 .user {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   justify-items: center;
   align-items: center;
   padding: 10px 30px;
